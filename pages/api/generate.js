@@ -51,12 +51,12 @@ export default async function (req, res) {
 function generatePrompt(animal) {
   const capitalizedAnimal =
     animal[0].toUpperCase() + animal.slice(1).toLowerCase();
-  return `Suggest three names for an animal that is a superhero.
+  return `给一只超级英雄动物起三个名字。
 
-Animal: Cat
-Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
-Animal: Dog
-Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
-Animal: ${capitalizedAnimal}
-Names:`;
+  动物：猫。
+  名字：夏普克劳船长，毛毛球特工，不可思议的猫咪。
+  动物：狗。
+  名字：保护者拉夫，神奇犬，巴克斯-阿洛特爵士
+  动物: ${capitalizedAnimal}
+  名字:`;
 }

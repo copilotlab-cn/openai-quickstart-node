@@ -53,9 +53,9 @@ function generatePrompt(animal) {
     animal[0].toUpperCase() + animal.slice(1).toLowerCase();
   return `给一只超级英雄动物起三个名字。
 
-  动物：猫。
-  名字：夏普克劳船长，毛毛球特工，不可思议的猫咪。
-  动物：狗。
+  动物：猫
+  名字：夏普克劳船长，毛毛球特工，不可思议的猫咪
+  动物：狗
   名字：保护者拉夫，神奇犬，巴克斯-阿洛特爵士
   动物: ${capitalizedAnimal}
   名字:`;
